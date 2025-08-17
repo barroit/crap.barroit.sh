@@ -1,0 +1,46 @@
+                        MIKU'S DESPOTIC MANDATE LICENSE
+                            Version 2, 17 Aug 2025
+
+Copyright 2025 Jiamu Sun <barroit@linux.com>
+You can copy this license text around as-is, but don't edit it.
+
+This [filename] isn't code. It's artwork. It's not covered by GPL, MIT, or any
+other open source license. It lives under Miku's Despotic Mandate License v2
+only.
+
+You can copy and redistribute this artwork anywhere, in any medium you want, as
+long as you follow the rules below. You can't modify the artwork, except for
+changing format (PNG to SVG, JPEG to WebP, whatever) or scaling it bigger or
+smaller, and even then it doesn't make it yours. The work is still mine, and it
+stays under this license.
+
+Rules (follow them or get your ass kicked)
+==========================================
+
+1.	Include this license in your repo, workspace, or whatever project you
+	dump the artwork into. SPDX-License-Identifier: LicenseRef-MDM-2.0 is
+	fine as a pointer, but the full text must be present somewhere. Just
+	don't pretend it's unlicensed.
+
+2.	Credit me, Jiamu Sun, loud and clear. If it's in a code repo, slap my
+	name in the top-level readme file. If it's somewhere else, put it in
+	equally user-facing docs. Don't do half-ass "hidden in a corner" shit.
+
+3.	If you show this artwork on a website or any public showcase, you must
+	attach my name to the thing in a machine-readable way. Example:
+
+	  <div itemscope itemtype='https://schema.org/ImageObject'>
+	    <img src='miku.png' alt='Miku illustration' itemprop='contentUrl'>
+	    <meta itemprop='copyrightHolder' content='Jiamu Sun'>
+	  </div>
+
+	Don't skip this. Don't hide credit in fine print.
+
+4.	This is non-commercial only. You don't get to slap it on a T-shirt,
+	shove it in a product, or otherwise make money off it, directly or
+	indirectly.
+
+You may use this version of the license, or any later version published by
+Jiamu Sun. The canonical copy of this license lives at:
+
+	https://mdm.barroit.sh/MDM-2.0
