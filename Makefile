@@ -1,20 +1,40 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-.PHONY: init-shared live build preview deploy
+READ_ADDR  := $$(cat build/host)
+WRITE_ADDR := ./scripts/local-addr.py
+ADDR_FILE  := build/host
+
+LIVE_LISTEN    := --host $(READ_ADDR)
+PREVIEW_LISTEN := --ip   $(READ_ADDR)
+
+ifneq ($(HOSTFREE),)
+  ADDR_FILE      := /dev/null
+  WRITE_ADDR     :=
+  LIVE_LISTEN    :=
+  PREVIEW_LISTEN :=
+endif
+
+.PHONY: init-shared live bundle preview deploy
 
 live:
 
 init-shared:
 	scripts/init-shared.sh
 
-live: init-shared
-	npx react-router dev --no-typescript
+build:
+	mkdir build
 
-build: init-shared
+build/host: build
+	$(WRITE_ADDR) >$(ADDR_FILE)
+
+live: init-shared build/host
+	npx react-router dev --no-typescript $(LIVE_LISTEN)
+
+bundle: init-shared
 	npx react-router build --no-typescript
 
-preview: build
-	npx wrangler dev
+preview: bundle build/host
+	npx wrangler dev $(PREVIEW_LISTEN)
 
-deploy: build
+deploy: bundle
 	npx wrangler deploy
