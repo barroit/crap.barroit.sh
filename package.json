@@ -1,0 +1,24 @@
+{
+   "name": "crap.barroit.sh",
+   "license": "GPL-3.0-or-later",
+   "type": "module",
+   "scripts": {
+      "preinstall": "./scripts/fix-fs-routes.sh"
+   },
+   "dependencies": {
+      "@react-router/node": "^7.8.1",
+      "isbot": "^5.1.29",
+      "react": "^19.1.0",
+      "react-dom": "^19.1.0",
+      "react-router": "^7.7.1"
+   },
+   "devDependencies": {
+      "@react-router/dev": "^7.7.1",
+      "@react-router/fs-routes": "^7.8.1",
+      "@react-router/serve": "^7.7.1",
+      "@tailwindcss/vite": "^4.1.4",
+      "tailwindcss": "^4.1.4",
+      "vite": "^6.3.3",
+      "vite-plugin-devtools-json": "^1.0.0"
+   }
+}
