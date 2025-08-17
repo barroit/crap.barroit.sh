@@ -1,5 +1,7 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 onlyBuiltDependencies:
-   - '@tailwindcss/oxide'
-   - esbuild
+  - '@tailwindcss/oxide'
+  - esbuild
+  - sharp
+  - workerd
+
+SPDX-License-Identifier: GPL-3.0-or-later

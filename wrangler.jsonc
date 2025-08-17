@@ -1,0 +1,26 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/*
+ * Copyright 2025 Jiamu Sun <barroit@linux.com>
+ */
+
+{
+   "$schema": "node_modules/wrangler/config-schema.json",
+   "name": "crap-barroit-sh",
+   "main": "worker/entry.js",
+   "compatibility_date": "2025-08-17",
+   "assets": {
+      "binding": "ASSETS",
+      "directory": "./build/client",
+      "html_handling": "drop-trailing-slash",
+      "not_found_handling": "single-page-application",
+   },
+   "observability": {
+      "enabled": true,
+   },
+   "routes": [
+      {
+         "pattern": "crap.barroit.sh",
+         "custom_domain": true,
+      },
+   ],
+}
