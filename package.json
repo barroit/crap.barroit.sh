@@ -20,6 +20,6 @@
       "tailwindcss": "^4.1.4",
       "vite": "^6.3.3",
       "vite-plugin-devtools-json": "^1.0.0",
-      "wrangler": "^4.30.0"
+      "wrangler": "^4.31.0"
    }
 }

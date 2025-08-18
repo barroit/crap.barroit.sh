@@ -11,7 +11,7 @@ import { isRouteErrorResponse,
 	 ScrollRestoration,
 } from 'react-router'
 
-import './index.css'
+// import './index.css'
 
 export function Layout({ children })
 {
