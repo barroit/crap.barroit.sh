@@ -7,7 +7,7 @@ import { execSync } from 'node:child_process'
 
 function prebuild()
 {
-	execSync('make init-shared', { stdio: 'inherit' })
+	execSync('make setup', { stdio: 'inherit' })
 }
 
 export default function no_nuke()
